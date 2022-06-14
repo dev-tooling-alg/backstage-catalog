@@ -1,0 +1,16 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: dev-tooling
+  description: lorem ipsum
+spec:
+  type: team
+  memberOf: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: sirCheikh
+spec:
+  memberOf: [dev-tooling]
