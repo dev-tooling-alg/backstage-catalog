@@ -5,6 +5,5 @@ metadata:
   name: all-groups
   description: A collection of all Backstage example Groups
 spec:
-  owner: group:dev-tooling
   targets:
     - ./groups/org.yaml
