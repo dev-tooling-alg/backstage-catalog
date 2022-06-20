@@ -153,7 +153,7 @@ spec:
       action: publish:github:pull-request
       if: ${{ parameters.kube == true }}
       input:
-        repoUrl: github.com?repo=${{ parameters.repoUrl | parseRepoUrl }}&owner=sirCheikh
+        repoUrl: github.com?repo=${{ parameters.repoUrl }}&owner=${{ parameters.owner }}
         branchName: create-${{ parameters.component_id }}
         title: ':robot: [backstage-bot] Create new App ${{ parameters.component_id }}'
         description: |
